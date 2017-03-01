@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="stylesheets/login/style.css"/>
+<div class="container">
+  
+  <div class="row" id="pwd-container">
+    <div class="col-md-4"></div>
+    
+    <div class="col-md-4">
+      <section class="login-form">
+        <form ng-submit="doLogin()" role="login">
+         <h3>Iniciar Sesion</h3>
+          <input type="user" name="user" placeholder="Usuario" ng-model="user" required class="form-control" />
+          
+          <input type="password" class="form-control" id="password" ng-model="password" placeholder="Contraseña" required="" />
+          
+          
+          <div class="pwstrength_viewport_progress"></div>
+          
+          
+          <button type="submit" class="btn  btn-primary btn-block">Ingresar</button>
+       <div class="alert alert-danger alert-dismissable" ng-show="error">
+    <a href="" class="close" ng-click="error=false;" aria-label="close" >×</a>
+    <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+  </div>
+        </form>
+        
+        <div class="form-links">
+ 
+        </div>
+      </section>  
+      </div>
+      
+   
